@@ -1,0 +1,12 @@
+.card {
+    &.confirmation {
+        border-left: none;
+        border-right: none;
+        padding: 0;
+
+        .table {
+            margin: 0;
+            border-radius: 10px;
+        }
+    }   
+}

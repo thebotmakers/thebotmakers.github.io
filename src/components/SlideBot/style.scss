@@ -1,0 +1,47 @@
+@import '../main.scss';
+.slide-bot {
+    /*border: 1px solid #ccc;
+    border-radius: 10px;*/
+    overflow: hidden;
+    .row {
+        padding-left: 15px;
+    }
+    .demo {
+        border-bottom: 1px solid #ccc;
+        @include media-breakpoint-up(md) {
+            border-bottom: none;
+            /*border-right: 1px solid #ccc;*/
+            width: 350px;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 450px;
+        }
+        img {
+            width: 70%;
+            margin: auto;
+        }
+    }
+    .image {
+        margin-top: 40px;
+        text-align: center;
+        img {
+            border-radius: 10px;
+            width: 200px;
+        }
+    }
+    .description {
+        margin-top: 40px;
+        h4 {
+            text-align: left;
+            font-size: 24px;
+        }
+        p {
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+}

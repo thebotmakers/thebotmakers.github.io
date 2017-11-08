@@ -1,0 +1,16 @@
+@import '../main.scss';
+footer {
+    background: #333333;
+    color: $text-white;
+    padding-top: 10px;
+    .row {
+        color: darken($text-white, 40%);
+        .copy {
+            font-size: 12px;
+            color: darken($text-white, 40%);
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// colors
+$text-white: #fff;
+$text-black: #666;
+$botblue: #45A0F5;
+$color-banking: #2C4CD9;
+$color-government: #393939;
+$color-health: #289A85;
+$color-entertainment: #E90046;
+$color-shopping: #ECB800;
+$bubble-bot: #E3E3E3;
+$buuble-user: #209FFD;
+$bubble-bot-text: lighten($text-black, 10%);
+$section-gradient-to: #F8F8F8;
+$section-gradient-from: #E9E9E9;
+//bootrap configuration
+$brand-primary: $botblue;
+$font-family-sans-serif: "Helvetica Neue",Helvetica,Arial,sans-serif;
+// $font-size-base: 16px;
+$padding-base-vertical: 12px;
+$padding-base-horizontal: 24px;
+// $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.bubble-typing {
+    width: 109px;
+    height: 84px;
+    background: url(/images/typing.gif) center center no-repeat;
+    background-color: #e6e6e6;
+    border-radius: 50px;
+}
+
+// header
+header {
+    color: $text-black;
+    .navigation {
+        h1 {
+            color: $text-white;
+            text-indent: -10000pt;
+            background: url(/images/logo.png) center center no-repeat;
+            margin: 20px 0px;
+            height: 84px;
+            background-size: contain;
+            @include media-breakpoint-up(sm) {
+                background-position: -15px center;
+            }
+        }
+        ul.links {
+            list-style: none;
+            color: $text-black;
+            margin: 30px auto 0;
+            padding: 0;
+            text-align: center;
+            @include media-breakpoint-up(sm) {
+                float: right;
+                margin: 34px 0 0;
+            }
+            li {
+                display: inline-block;
+                margin: 5px;
+                a {
+                    color: $text-black;
+                    &.btn-primary {
+                        color: $text-white;
+                    }
+                }
+            }
+            li.lang.active {
+                border: 2px solid $botblue;
+                border-radius: 5px;
+                a {
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}
